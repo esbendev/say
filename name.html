@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Say</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <noscript>Please enable JavaScript to use this site.</noscript>
+    <header>
+        <form id="search-form" autocomplete="off" action="name.html">
+            <input type="text" name="streamer-name" id="input_streamer-name" placeholder="enter a streamer's name..."
+                required>
+            <button type="submit" id="btn_search">Search</button>
+        </form>
+    </header>
+    <main>
+        <div id="success-message" class="success-message ocultar">
+            <h1 class="h1_name" id="h1_name"></h1>
+            <p>Sounds like:</p>
+            <p class="p_pronunciation" id="p_pronunciation"></p>
+            <p>People saying it correctly:</p>
+            <div class="div_examples" id="div_examples"></div>
+        </div>
+        <div id="error-message" class="error-message ocultar">
+            <h1 class="h1_error">Streamer not found</h1>
+            <p>Looks like we don't have this one yet.</p>
+            <p>If you wan't to help out 👉👈,<br><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdChLxfWy83fXr1f1G2uMG1Bqxk0tc66f7526wpxapLEPaOlA/viewform">fill out this form!</a> </p>
+        </div>
+        
+    </main>
+    <footer>
+        <p>Made by <a href="https://esbendev.com">@esbendev</a></p>
+        <p>Data collected with the help of <a href="https://www.twitch.tv/qtcinderella">qt cinderella's</a> chat.</p>
+    </footer>
+    <script src="examples.js"></script>
+    <script src="pronunciation.js"></script>
+    <script src="streamerNames.js"></script>
+    <script src="autocomplete.js"></script>
+    <script src="loadData.js"></script>
+</body>
+
+</html>

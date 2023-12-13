@@ -1,0 +1,165 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #292929;
+    padding: 1rem;
+}
+
+header>form {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 1rem;
+}
+
+input#input_streamer-name {
+    padding: .5rem;
+    border-radius: 1rem;
+    border: 0;
+
+}
+
+button#btn_search {
+    display: block;
+    padding: .2rem;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main {
+    padding: 4rem 1rem 6rem 1rem;
+
+}
+
+.autocomplete-items {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    background: white;
+    width: 100%;
+}
+
+.autocomplete-items>div {
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.autocomplete-active {
+    background-color: #ccc;
+}
+
+.ocultar {
+    display: none !important;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #292929;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer>p {
+    color: #fff;
+    font-weight: 100;
+}
+
+footer>p>a {
+    color: #fff;
+}
+
+.success-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.h1_name,
+.h1_error {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.p_pronunciation {
+    font-weight: 100;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.error-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+}
+
+.p_explanation {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.div_examples{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div_examples>iframe {
+    margin: .4rem;
+    border: none;
+}
+
+@media screen and (min-width: 500px) {
+    header>form {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    button#btn_search {
+        padding: .2rem .5rem;
+        cursor: pointer;
+    }
+
+    .div_examples{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.ocultar-datos{
+    display: none !important;
+}

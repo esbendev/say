@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Say</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <noscript>Please enable JavaScript to use this site.</noscript>
+    <header>
+        <form id="search-form" autocomplete="off" action="name.html">
+            <input type="text" name="streamer-name" id="input_streamer-name" placeholder="enter a streamer's name..." required>
+            <button type="submit" id="btn_search">Search</button>
+        </form>
+    </header>
+    <main>
+        <p class="p_explanation">type in a streamer's name, see how it's pronounced.</p>
+    </main>
+    <footer>
+        <p>Made by <a href="esbendev.com">@esbendev</a></p>
+        <p>(data collected with the help of <a href="https://www.twitch.tv/qtcinderella">qt cinderella's</a> chat)</p>
+    </footer>
+    <script src="streamerNames.js"></script>
+    <script src="autocomplete.js"></script>
+</body>
+
+</html>
