@@ -16,12 +16,18 @@
     <noscript>Please enable JavaScript to use this site.</noscript>
     <header>
         <form id="search-form" autocomplete="off" action="name.html">
+            <a class="logo" href="#">Say</a>
             <input type="text" name="streamer-name" id="input_streamer-name" placeholder="enter a streamer's name..." required>
             <button type="submit" id="btn_search">Search</button>
         </form>
     </header>
     <main>
-        <p class="p_explanation">type in a streamer's name, see how it's pronounced.</p>
+        <p class="p_explanation">type in a streamer's name, see how it's pronounced 😊</p>
+        <div class="div_explanation">
+            <div class="div_explanation--count">
+                <p class="p_explanation--count"><span id="record-count"></span> names have been added so far.</p>
+            </div>
+        </div>
     </main>
     <footer>
         <p>Made by <a href="esbendev.com">@esbendev</a></p>
@@ -29,6 +35,9 @@
     </footer>
     <script src="streamerNames.js"></script>
     <script src="autocomplete.js"></script>
+    <script>
+        document.getElementById("record-count").innerHTML = streamerNames.length;
+    </script>
 </body>
 
 </html>
