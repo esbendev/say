@@ -1,1 +1,1 @@
-var streamerNames = ["Squeex","QT Cinderella"];
+var streamerNames = ["Squeex","QT Cinderella","Hasan","Valkyrae","Pointcrow","Lilypichu","Sykkuno","Fuslie","Extraemily"];

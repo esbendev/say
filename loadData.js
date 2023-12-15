@@ -12,8 +12,9 @@ function armarLinkExample(dato){
     var link = dato.split("?");
     linkExample = null;
     // armo el link
-    if (link.length == 4){
-        var linkExample = "https://www.youtube.com/embed/" + link[0] + "?si=" + link[1] + "&amp;controls=0&amp;clip=" + link[2] + "&amp;clipt=" + link[3];
+    if (link.length == 3){
+        // https://www.youtube.com/embed/Naxqk6buRZY?clip=UgkxiBURTyALMmkF4MeKb3zVmsRH937niO0j&clipt=ELWouAEYvc-4AQ
+        var linkExample = "https://www.youtube.com/embed/" + link[0] + "?clip=" + link[1] + "&clipt=" + link[2];
     }
     return linkExample;
 }
