@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Say</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadDirectory()">
+    <noscript>Please enable JavaScript to use this site.</noscript>
+    <header>
+        <form id="search-form" autocomplete="off" action="name.html">
+            <a class="logo" href="index.html">Say</a>
+            <input type="text" name="streamer-name" id="input_streamer-name" placeholder="enter a streamer's name..."
+                required>
+            <button type="submit" id="btn_search">Search</button>
+        </form>
+    </header>
+    <main>
+            <h1 class="h1_name" id="h1_name">Directory</h1>
+            <div id="directory_names" class="directory_names">
+
+            </div>
+    </main>
+    <footer>
+        <p>Made by <a href="https://esbendev.com">@esbendev</a></p>
+        <p>If you want to help, <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdChLxfWy83fXr1f1G2uMG1Bqxk0tc66f7526wpxapLEPaOlA/viewform">fill
+                out this form!</a></p>
+    </footer>
+    <script src="streamerNames.js"></script>
+    <script src="autocomplete.js"></script>
+    <script src="pronunciation.js"></script>
+    <script src="loadDirectory.js"></script>
+</body>
+
+</html>

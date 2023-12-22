@@ -101,7 +101,8 @@ footer>p>a {
 }
 
 .h1_name,
-.h1_error {
+.h1_error,
+.h1_directory {
     font-size: 2.5rem;
     font-weight: 900;
     margin-bottom: 1rem;
@@ -131,14 +132,14 @@ footer>p>a {
     text-align: center;
 }
 
-.div_explanation{
+.div_explanation {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 3rem;
 }
 
-.p_explanation--count{
+.p_explanation--count {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -148,9 +149,16 @@ footer>p>a {
     padding: 1rem;
 }
 
-.div_explanation--count{
+.div_explanation--count {
     background-color: #c6caff;
     border-radius: 1rem;
+}
+
+.p_explanation--link {
+    display: block;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem;
 }
 
 .div_examples {
@@ -198,4 +206,42 @@ a.logo {
 
 #record-count {
     font-weight: bold;
+}
+
+.directory_name--streamer {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: .4rem;
+}
+
+.directory_name--letra {
+    font-size: 2rem;
+    color: cadetblue;
+}
+
+.streamer_nombre {
+    font-size: 1.2rem;
+}
+
+.streamer_pronunciacion {
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+
+.streamer_pronunciacion::before {
+    content: "[";
+}
+
+.streamer_pronunciacion::after {
+    content: "]";
+}
+
+.streamer_link {
+    font-size: .8rem;
+    color: #fff;
+    background-color: #000;
+    padding: .2rem .5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
 }
