@@ -16,8 +16,9 @@ function loadDirectory() {
         var divPrincipal = document.createElement("div");
         divPrincipal.setAttribute("class", "directory_name--streamer");
         //nombre
-        var pNombre = document.createElement("p");
+        var pNombre = document.createElement("a");
         pNombre.setAttribute("class", "streamer_nombre");
+        pNombre.setAttribute("href", "name.html?streamer-name=" + streamer);
         pNombre.innerHTML = streamer;
         // pronunciacion
         var pPronunciacion = document.createElement("p");
