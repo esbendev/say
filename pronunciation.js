@@ -102,7 +102,7 @@ pronunciation = {
     "Noraexplorer": ["nora explorer"],
     "Omie": ["ow-mee"],
     "Onigiri": ["onigiri"],
-    "Papesan": ["pape san"],
+    "Papesan": ["pup san"],
     "Paymoneywubby": ["pay-money-wubby"],
     "Peterpark": ["peter-park"],
     "Piratesoftware": ["pirate software"],
