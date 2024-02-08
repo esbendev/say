@@ -10,6 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-475SSTM0WC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-475SSTM0WC');
+    </script>
 </head>
 
 <body>
@@ -17,7 +26,8 @@
     <header>
         <form id="search-form" autocomplete="off" action="name.html">
             <a class="logo" href="#">Say</a>
-            <input type="text" name="streamer-name" id="input_streamer-name" placeholder="enter a streamer's name..." required>
+            <input type="text" name="streamer-name" id="input_streamer-name" placeholder="enter a streamer's name..."
+                required>
             <button type="submit" id="btn_search">Search</button>
         </form>
     </header>
@@ -32,7 +42,9 @@
     </main>
     <footer>
         <p>Made by <a href="esbendev.com">@esbendev</a></p>
-        <p>If you want to help, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdChLxfWy83fXr1f1G2uMG1Bqxk0tc66f7526wpxapLEPaOlA/viewform">fill out this form!</a></p>
+        <p>If you want to help, <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdChLxfWy83fXr1f1G2uMG1Bqxk0tc66f7526wpxapLEPaOlA/viewform">fill
+                out this form!</a></p>
     </footer>
     <script src="streamerNames.js"></script>
     <script src="autocomplete.js"></script>
